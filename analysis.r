@@ -285,8 +285,11 @@ box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = fact
     axis.text.y = element_text(size = 20, color = "black"),
     legend.title = element_text(size = 18, face = "bold"),
     legend.text = element_text(size = 18),
-    legend.position = "right",
-    legend.key.size = unit(1, "cm")
+    legend.position = "top",               
+    legend.direction = "horizontal",         
+    legend.box = "horizontal",               
+    legend.key.size = unit(1, "cm"),
+    legend.margin = margin(b = 10)
   )
 
 print(box_plot)
