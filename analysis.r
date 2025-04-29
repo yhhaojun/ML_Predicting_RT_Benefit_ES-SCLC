@@ -68,16 +68,19 @@ print(analysis_results)
 box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = factor(Liver))) +
   geom_boxplot(color = "black", alpha = 0.8, outlier.color = "red") +
   labs(x = "Strata", y = "months", fill = "Liver") +
-  scale_fill_manual(values = c("#FF6B6B", "#4D8AC8"), labels = c("Low", "High")) +
+  scale_fill_manual(values = c("#FF6B6B", "#4D8AC8"), labels = c("No/Unknown", "Yes")) +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
     axis.title = element_text(size = 20, face = "bold"),
     axis.text = element_text(size = 20, color = "black"),
-    legend.title = element_text(size = 18, face = "bold"),
-    legend.text = element_text(size = 18),
-    legend.position = "right",
-    legend.key.size = unit(1, "cm")
+    legend.title = element_text(size = 15, face = "bold"),
+    legend.text = element_text(size = 15),
+    legend.position = "top",                
+    legend.direction = "horizontal",         
+    legend.box = "horizontal",               
+    legend.key.size = unit(1, "cm"),
+    legend.margin = margin(b = 10)
   )
 print(box_plot)
 
@@ -92,21 +95,19 @@ box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = fact
     y = "months",
     fill = "Chemotherapy"
   ) +
-  scale_fill_manual(
-    values = c("#FF6B6B", "#4D8AC8"),
-    labels = c("Low", "High")
-  ) +
+  scale_fill_manual(values = c("#FF6B6B", "#4D8AC8"), labels = c("No/Unknown", "Yes")) +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
-    axis.title.x = element_text(size = 20, face = "bold"),
-    axis.title.y = element_text(size = 20, face = "bold"),
-    axis.text.x = element_text(size = 20, color = "black"),
-    axis.text.y = element_text(size = 20, color = "black"),
+    axis.title = element_text(size = 20, face = "bold"),
+    axis.text = element_text(size = 20, color = "black"),
     legend.title = element_text(size = 15, face = "bold"),
-    legend.text = element_text(size = 18),
-    legend.position = "right",
-    legend.key.size = unit(1, "cm")
+    legend.text = element_text(size = 15),
+    legend.position = "top",                
+    legend.direction = "horizontal",         
+    legend.box = "horizontal",               
+    legend.key.size = unit(1, "cm"),
+    legend.margin = margin(b = 10)
   )
 
 print(box_plot)
@@ -122,21 +123,19 @@ box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = fact
     y = "months",
     fill = "Bone"
   ) +
-  scale_fill_manual(
-    values = c("#FF6B6B", "#4D8AC8"),
-    labels = c("Low", "High")
-  ) +
+  scale_fill_manual(values = c("#FF6B6B", "#4D8AC8"), labels = c("No/Unknown", "Yes")) +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
-    axis.title.x = element_text(size = 20, face = "bold"),
-    axis.title.y = element_text(size = 20, face = "bold"),
-    axis.text.x = element_text(size = 20, color = "black"),
-    axis.text.y = element_text(size = 20, color = "black"),
-    legend.title = element_text(size = 18, face = "bold"),
-    legend.text = element_text(size = 18),
-    legend.position = "right",
-    legend.key.size = unit(1, "cm")
+    axis.title = element_text(size = 20, face = "bold"),
+    axis.text = element_text(size = 20, color = "black"),
+    legend.title = element_text(size = 15, face = "bold"),
+    legend.text = element_text(size = 15),
+    legend.position = "top",                
+    legend.direction = "horizontal",         
+    legend.box = "horizontal",               
+    legend.key.size = unit(1, "cm"),
+    legend.margin = margin(b = 10)
   )
 
 print(box_plot)
@@ -152,21 +151,19 @@ box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = fact
     y = "months",
     fill = "Brain"
   ) +
-  scale_fill_manual(
-    values = c("#FF6B6B", "#4D8AC8"),
-    labels = c("Low", "High")
-  ) +
+  scale_fill_manual(values = c("#FF6B6B", "#4D8AC8"), labels = c("No/Unknown", "Yes")) +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
-    axis.title.x = element_text(size = 20, face = "bold"),
-    axis.title.y = element_text(size = 20, face = "bold"),
-    axis.text.x = element_text(size = 20, color = "black"),
-    axis.text.y = element_text(size = 20, color = "black"),
-    legend.title = element_text(size = 18, face = "bold"),
-    legend.text = element_text(size = 18),
-    legend.position = "right",
-    legend.key.size = unit(1, "cm")
+    axis.title = element_text(size = 20, face = "bold"),
+    axis.text = element_text(size = 20, color = "black"),
+    legend.title = element_text(size = 15, face = "bold"),
+    legend.text = element_text(size = 15),
+    legend.position = "top",                
+    legend.direction = "horizontal",         
+    legend.box = "horizontal",               
+    legend.key.size = unit(1, "cm"),
+    legend.margin = margin(b = 10)
   )
 
 print(box_plot)
@@ -182,21 +179,19 @@ box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = fact
     y = "months",
     fill = "Lung"
   ) +
-  scale_fill_manual(
-    values = c("#FF6B6B", "#4D8AC8"),
-    labels = c("Low", "High")
-  ) +
+  scale_fill_manual(values = c("#FF6B6B", "#4D8AC8"), labels = c("No/Unknown", "Yes")) +
   theme_minimal() +
   theme(
     plot.title = element_text(size = 20, face = "bold"),
-    axis.title.x = element_text(size = 20, face = "bold"),
-    axis.title.y = element_text(size = 20, face = "bold"),
-    axis.text.x = element_text(size = 20, color = "black"),
-    axis.text.y = element_text(size = 20, color = "black"),
-    legend.title = element_text(size = 18, face = "bold"),
-    legend.text = element_text(size = 18),
-    legend.position = "right",
-    legend.key.size = unit(1, "cm")
+    axis.title = element_text(size = 20, face = "bold"),
+    axis.text = element_text(size = 20, color = "black"),
+    legend.title = element_text(size = 15, face = "bold"),
+    legend.text = element_text(size = 15),
+    legend.position = "top",                
+    legend.direction = "horizontal",         
+    legend.box = "horizontal",               
+    legend.key.size = unit(1, "cm"),
+    legend.margin = margin(b = 10)
   )
 
 print(box_plot)
@@ -214,7 +209,7 @@ box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = fact
   ) +
   scale_fill_manual(
     values = c("#FF6B6B", "#4D8AC8"),
-    labels = c("Low", "High")
+    labels = c("Female", "Male")
   ) +
   theme_minimal() +
   theme(
@@ -223,10 +218,13 @@ box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = fact
     axis.title.y = element_text(size = 20, face = "bold"),
     axis.text.x = element_text(size = 20, color = "black"),
     axis.text.y = element_text(size = 20, color = "black"),
-    legend.title = element_text(size = 18, face = "bold"),
+    legend.title = element_text(size = 15, face = "bold"),
     legend.text = element_text(size = 18),
-    legend.position = "right",
-    legend.key.size = unit(1, "cm")
+    legend.position = "top",                 
+    legend.direction = "horizontal",         
+    legend.box = "horizontal",               
+    legend.key.size = unit(1, "cm"),
+    legend.margin = margin(b = 10)
   )
 
 print(box_plot)
@@ -255,8 +253,11 @@ box_plot <- ggplot(matched_data, aes(x = factor(strata), y = months, fill = fact
     axis.text.y = element_text(size = 20, color = "black"),
     legend.title = element_text(size = 18, face = "bold"),
     legend.text = element_text(size = 18),
-    legend.position = "right",
-    legend.key.size = unit(1, "cm")
+    legend.position = "top",                 
+    legend.direction = "horizontal",         
+    legend.box = "horizontal",               
+    legend.key.size = unit(1, "cm"),
+    legend.margin = margin(b = 10)
   )
 
 print(box_plot)
